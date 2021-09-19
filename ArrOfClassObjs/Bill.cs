@@ -8,18 +8,14 @@ namespace ArrOfClassObjs
 {
     public class Bill
     {
-        public Item[] ItemList = new Item[10];
+        public Item[] ItemList = new Item[1];
         int i = 0;
 
         public void AddItem(Item item)
         {
-            
             ItemList[i] = new Item();
-            if (i > ItemList.Length)
-            {
-                Array.Resize(ref ItemList, ItemList.Length + 1);
-            }
-            else if(ItemList[i] != null)
+
+            if(ItemList[i] != null)
             {
                 
                 ItemList[i].name = item.name;
@@ -28,6 +24,8 @@ namespace ArrOfClassObjs
 
                 //Console.WriteLine("Current Array size is: " + ItemList.Length);
             }
+            Array.Resize(ref ItemList, ItemList.Length + 1);
+            //Console.WriteLine("Current Array size is: " + ItemList.Length);
             i++;
         }
 

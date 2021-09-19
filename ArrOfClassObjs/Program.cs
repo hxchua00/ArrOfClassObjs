@@ -24,7 +24,7 @@ namespace ArrOfClassObjs
             Item salmon2 = new Item("Salmon", 20.00, 5.6);
             Item watermelon3 = new Item("Watermelon3", 2.00, 10.2);
             Item chocolate3 = new Item("Chocolate3", 15.00, 0.1);
-            //Item salmon = new Item("Salmon", 20.00, 5.6);
+            Item salmon3 = new Item("Salmon3", 20.00, 5.6);
 
             newBill.AddItem(watermelon);
             newBill.AddItem(chocolate);
@@ -37,6 +37,7 @@ namespace ArrOfClassObjs
             newBill.AddItem(salmon2);
             newBill.AddItem(watermelon3);
             newBill.AddItem(chocolate3);
+            newBill.AddItem(salmon3);
             newBill.printAll();
 
             Console.ReadLine();
